@@ -6,6 +6,7 @@ function updateOutput(resultado) {
 
   if (output.value != " "){
     output.innerText = resultado;
+    output.appendChild(btnCopiar);
     if (resultado.trim().length > 0) {
       if (outputImg) outputImg.style.display = 'none';
       if (outputMessage) outputMessage.style.display = 'none';
