@@ -1,0 +1,133 @@
+:root {
+  --corprincipal: #ffffff; /* Cor principal */
+  --corsegundaria: #470005; /* Cor secundária */
+  --cortitulo: #000000; /* Cor do título */
+  
+  --tamanho-fonte: 1rem; /* Tamanho da fonte base */
+  --tamanho-padding: 1rem; /* Tamanho do padding */
+}
+
+body {
+  background: var(--corsegundaria);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
+  padding: 2%;
+}
+
+.cabecalho h1 {
+  color: var(--cortitulo);
+}
+
+.cabecalho img {
+  max-width: 70px;
+  max-height: 70px;
+  width: auto;
+  height: auto;
+}
+
+.container-input {
+  display: flex;
+  justify-content: space-between;
+  padding: 2% 0 0 4%;
+}
+
+.container-input .input{
+  width: 400px;
+  height: 330px;
+}
+
+
+.main__textarea {
+  width: 700px;
+  height: 350px;
+  resize: none; /* Adiciona esta propriedade para evitar a redimensionamento */
+  padding: 2px;
+  font-size: 1rem;
+  color: var(--cortitulo);
+  background: #ffffff;
+  border: 1px solid var(--cortitulo);
+  border-radius: 5px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+#input-texto {
+  width: 570px;
+  height: 345px;
+  font-size: 20px;
+  color: var(--cortitulo);
+  background: transparent;
+  box-shadow: none;
+  border: none;
+  resize: none;
+  outline: 0;
+  padding: 10px;
+  text-transform: uppercase;
+}
+
+#output{
+  display: flex;
+  flex-direction: column;
+  border: 3px solid var(--cortitulo);
+  border-radius: 20px;
+  width: 350px;
+  height: 400px;
+  margin-right: 3%;
+  position: relative; /* Adiciona posicionamento relativo ao container */
+}
+
+#output h2 {
+  text-align: center;
+  font-size: 25px;
+  color: var(--cortitulo);
+}
+
+#output img{
+  max-width:400px;
+  max-height:300px;
+  width: auto;
+  height: auto;
+  margin-top: 4%;
+
+}
+
+.btn-copiar{
+  
+  position: absolute; /* Adiciona posicionamento absoluto */
+  bottom: 10px; /* Define a distância da parte inferior */
+  left: 50%; /* Alinha o botão horizontalmente */
+  transform: translateX(-50%); /* Centraliza horizontalmente */
+  border: 2px solid var(--cortitulo);
+  border-radius: 10px;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  width: 150px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.container-bnt button {
+  border: 2px solid var(--cortitulo);
+  border-radius: 10px;
+  text-decoration: none;
+  color: rgb(0, 0, 0); /* Alterado para garantir uma boa legibilidade */
+  width: 150px;
+  height: 50px;
+  margin-left: 4%;
+  cursor: pointer;
+}
+
+.container-bnt button:hover {
+  border: 2px solid var(--corsegundaria);
+  transition: 0.5s all;
+  background-color: #E6010F;
+}
